@@ -45,7 +45,7 @@
         // 2. スキャナーの起動関数
         function startScanner() {
             const html5QrcodeScanner = new Html5QrcodeScanner(
-                "reader", { fps: 10, qrbox: { width: 250, height: 150 } }
+                "reader", { fps: 20, qrbox: { width: 250, height: 150 } }
             );
 
             html5QrcodeScanner.render(onScanSuccess, onScanFailure);
